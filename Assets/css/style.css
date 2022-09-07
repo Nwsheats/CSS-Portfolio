@@ -94,10 +94,11 @@ aside ul li:hover {
     height: 600px;
     width: 1000px;
     border: 5px solid #00e9dd;
-    background-image: url("../images/ocean.jpg"), linear-gradient(45deg, black 0 50%, grey 50% 100%); 
+    background-image: url("../images/ocean.jpg"); 
     background-position: center;
     display: flex;
     align-items: flex-end;
+    opacity: 0.5;
 }
 
 .work1 div {
@@ -109,6 +110,40 @@ aside ul li:hover {
 }
 
 .work1:hover {
-    background-image: linear-gradient(45deg, blue 50 50%, aquamarine 50% 100%);
+    opacity: 1.0;
+}
 
+.work2 {
+  height: 200px;
+  width: 450px;
+  border: 5px solid #00e9dd;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-image: url("../images/ocean.jpg"); 
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0.5;
+}
+
+.work2 div {
+  background-color: #00e9dd;
+  font-family: sans-serif;
+  line-height: 1.3em;
+  margin-bottom: 20px;
+  padding: 10px 20px 10px 10px;
+}
+
+.work3 {
+
+height: 200px;
+width: 450px;
+border: 5px solid #00e9dd;
+margin-top: 20px;
+margin-right: 20px;
+background-image: url("../images/ocean.jpg"); 
+background-position: center;
+display: flex;
+align-items: flex-end;
+opacity: 0.5;
 }
