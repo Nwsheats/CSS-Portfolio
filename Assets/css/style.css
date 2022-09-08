@@ -39,19 +39,31 @@ nav a {
   }
 
   .container {
-    display: grid;
-    grid-template-columns: 350px 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+    margin-top: 10px;
   }
+
+main {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
 
   aside {
     min-height: 30vh;
     justify-content: space-between;
     flex-direction: column;
     border-right: 5px solid #2e4b2e;
+    width: 20%;
   }
 
   aside ul {
+    display: flex;
     padding-top: 30%;
     list-style-type: none;
     text-align: center;
@@ -59,7 +71,7 @@ nav a {
 
 aside ul li {
     text-decoration: none;
-    display: inline-block;
+    flex-wrap: wrap;
     font-size: 23px;
     color: #2e4b2e;
     margin: 40px;
@@ -68,7 +80,7 @@ aside ul li {
   }
   
 aside ul li:hover {
-    color: rgb(136, 10, 10);
+    color: #880a0a;
   }
 
 
@@ -91,8 +103,8 @@ aside ul li:hover {
 }
 
 .work1 {
-    height: 600px;
-    width: 1000px;
+    width: 80.1%;
+    height: 1000px;
     border: 5px solid #00e9dd;
     background-image: url("../images/ocean.jpg"); 
     background-position: center;
@@ -113,28 +125,45 @@ aside ul li:hover {
     opacity: 1.0;
 }
 
+
+
 .work2 {
-  height: 200px;
-  width: 450px;
+  width: 39%;
   border: 5px solid #00e9dd;
   margin-top: 20px;
   margin-right: 20px;
   background-image: url("../images/ocean.jpg"); 
   background-position: center;
-  display: flex;
-  align-items: flex-end;
   opacity: 0.5;
-  display: inline-block;
 }
 
 .work2 div {
   background-color: #00e9dd;
   font-family: sans-serif;
   line-height: 1.3em;
-  /* margin-bottom: -10px; */
   padding: 5px 5px 5px 5px;
   width: 25%;
   margin-top: 60px;
 }
 
+.work2:hover {
+  opacity: 1.0;
+}
 
+
+.contact ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.contact ul li {
+  text-decoration: none;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 45px;
+  color: #2e4b2e;
+  margin: 200px 50px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
