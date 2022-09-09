@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     line-height: 1.3em;
     margin: 0;
+    background-color: rgb(195, 218, 240);
   }
   
 header {
@@ -90,8 +91,12 @@ aside ul li:hover {
     background-image: url("../images/gears.jpg");
     background-size: cover;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-end;
+}
+
+.border div {
+  margin-left: 65%;
 }
 
 .border h2 {
@@ -100,6 +105,14 @@ aside ul li:hover {
     padding: 10px;
     box-shadow: 8px 8px 8px #3b7c71;
     margin-right: 5px;
+}
+
+
+.border img {
+  height: 200px;
+  margin-left: 25px;
+  border: 5px solid aquamarine;
+  border-radius: 200px;
 }
 
 .work1 {
