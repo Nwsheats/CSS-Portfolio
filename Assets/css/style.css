@@ -9,7 +9,6 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 1%;
     background-color: #2e2d30;
     color: #fff;
@@ -26,9 +25,10 @@ h2 {
     font-size: 250%;
   }
 
+/* The below code is for the nav bar */
+
 nav ul {
     display: flex;
-    justify-content: space-between;
     min-width: 300px;
     list-style-type: none;
   }
@@ -39,6 +39,9 @@ nav a {
     text-decoration: underline;
     margin: 50px;
   }
+
+/* The container is the rest of the page, with the titles of the section in the <aside> elements
+and the content in the <main> section, with a <div> element for each section */
 
   .container {
     width: 100%;
@@ -57,26 +60,22 @@ main {
 
 
   aside {
-    flex-wrap: wrap;
-    flex-direction: row;
     border-right: 5px solid #000000;
     width: 20%;
   }
 
   aside ul {
     display: flex;
-    flex-wrap: wrap;
     padding-top: 3%;
     list-style-type: none;
-    text-align: center;
+    text-align: start;
   }
 
 aside ul li {
     text-decoration: none;
-    flex-wrap: wrap;
     font-size: 23px;
     color: #131313;
-    margin: 40px;
+    margin: 20px 40px 40px 40px;
     font-family: sans-serif;
     font-weight: lighter;
   }
@@ -85,7 +84,7 @@ aside ul li:hover {
     color: #0a8825;
   }
 
-
+/* the border is for the image and top text */
 
 .border {
     height: 200px;
@@ -116,6 +115,9 @@ aside ul li:hover {
   border: 5px solid aquamarine;
   border-radius: 200px;
 }
+
+/* Work1 - Work5 are the images in the Work section that show 1.0 opacity when hovered over */
+
 
 .work1 {
     width: 80.1%;
@@ -248,6 +250,7 @@ aside ul li:hover {
   opacity: 1.0;
 }
 
+/* contact is for the Contact Us section, to add more customization options for the Contact ul and ul li sections */
 
 .contact {
   display: flex;
@@ -268,8 +271,9 @@ aside ul li:hover {
   color: #1d2744;
   margin: 5px 50px;
   font-family: sans-serif;
-  font-weight: lighter;
 }
+
+/* ResumeText is for the last text in the document */
 
 .ResumeText {
   display: flex;
@@ -277,24 +281,32 @@ aside ul li:hover {
   margin-left: 25%;
 }
 
+/* @media screens to resize when smaller */
+
 @media screen and (max-width: 1100px) {
-  main,
-  nav,
-  .contact {
-    flex-shrink: 1 1 1;
-  }
+
   aside {
     display: none;
+  }
+  .contact ul li {
+    font-size: 20px
+  }
+  .border div {
+    display: none;
+  }
+  nav a {
+    margin: 30px;
+    font-size: 110%;
   }
 }
 
 @media screen and (max-width: 768px) {
   nav a {
-    margin: 20px;
+    margin: 10px;
     font-size: 80%;
   }
   .contact ul li {
-    font-size: 20px;
+    font-size: 15px;
     margin: 5px 25px;
   }
 }
@@ -302,5 +314,9 @@ aside ul li:hover {
 @media screen and (max-width: 650px) {
   nav a {
     margin: 10px;
-    font-size: 60%;
+    font-size: 70%;
   }
+  .contact ul li {
+    font-size: 13px;
+  }
+}
