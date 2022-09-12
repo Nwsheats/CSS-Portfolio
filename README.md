@@ -12,4 +12,4 @@ This project involves the creation of my portfolio, complete with a picture of m
 https://nwsheats.github.io/Portfolio-CSS/
 
 ## URL of GitHub Repository:
-https://github.com/Nwsheats/CSS-Portfolio
+https://github.com/Nwsheats/Portfolio-CSS/
